@@ -1,15 +1,14 @@
-
-import { GlobalStyle } from './GlobalStyle';
-import { Layout } from './Layout/Layout';
-import { Section } from './Section/Section';
-import { ContactForm } from './ContactForm/ContactForm';
+import { useSelector } from 'react-redux';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { ContactList } from './ContactList/ContactList';
+import { GlobalStyle } from 'styles/GlobalStyle';
+import { Layout } from './Layout/Layout';
+import { Section } from './Section/Section';
 import { Title } from './Title/Title';
 import { Filter } from './Filter/Filter';
+import { ContactForm } from './ContactForm/ContactForm';
+import { ContactList } from './ContactList/ContactList';
 
-import { useSelector } from 'react-redux';
 import { getContacts } from 'redux/contacts/contacts-selectors';
 
 export const App = () => {

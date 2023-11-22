@@ -1,13 +1,14 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { Formik } from 'formik';
 import * as yup from 'yup';
+import 'yup-phone';
+
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { toastifyOptions } from 'utilitys/toastifyOptions';
 
 import { addContact } from 'redux/contacts/contacts-slice';
 import { getContacts } from 'redux/contacts/contacts-selectors';
-
 import { BsFillTelephoneFill, BsPersonFill } from 'react-icons/bs';
 import { IoMdPersonAdd } from 'react-icons/io';
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import { MainTitle } from './Title.styled';
 import PropTypes from 'prop-types';
 
