@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { Formik } from 'formik';
 import * as yup from 'yup';
-import 'yup-phone';
 
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -33,10 +32,9 @@ const schema = yup.object().shape({
     .required(),
   number: yup
     .string()
-    .phone(
-      'UA',
-      true,
-      'Phone number must be a valid phone number for region UA, digits and can contain spaces, dashes, parentheses and can start with +'
+    .matches(
+      /\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}/,
+      'Phone number must be digits and can contain spaces, dashes, parentheses and can start with +'
     )
     .required(),
 });
