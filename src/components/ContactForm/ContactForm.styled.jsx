@@ -109,4 +109,9 @@ export const StyledButton = styled.button`
       }
     }
   }
+  
+`;
+
+export const LabelSpan = styled.span`
+  color: ${props => props.theme.colors.black};
 `;

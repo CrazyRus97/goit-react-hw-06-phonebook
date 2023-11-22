@@ -35,3 +35,7 @@ export const Input = styled.input`
 
   font-size: ${props => props.theme.fontSizes.s};
 `;
+
+export const LabelSpan = styled.span`
+  color: ${props => props.theme.colors.black};
+`;
